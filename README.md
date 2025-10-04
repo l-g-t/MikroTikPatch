@@ -1,6 +1,18 @@
 [![Patch Mikrotik RouterOS 6.x](https://github.com/elseif/MikroTikPatch/actions/workflows/mikrotik_patch_6.yml/badge.svg)](https://github.com/elseif/MikroTikPatch/actions/workflows/mikrotik_patch_6.yml)
 [![Patch Mikrotik RouterOS 7.x](https://github.com/elseif/MikroTikPatch/actions/workflows/mikrotik_patch_7.yml/badge.svg)](https://github.com/elseif/MikroTikPatch/actions/workflows/mikrotik_patch_7.yml)
 
+### 感谢赞助
+[DartNode(aff)](https://dartnode.com?aff=SnazzyLobster067) | [ZMTO(aff)](https://console.zmto.com/?affid=1588) | [Vultr(aff)](https://www.vultr.com/?ref=9807160-9J)
+
+### 感谢捐赠
+ETH/BSC/MATIC(USDT)：0x7d5ade1bb74f170411ba4a9a6e8752d7b431b455
+
+TRX(USDT): TJ1Spmytu9CFhDg4QSo3cmWSrBKjNXuUYP
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O31LX7D0)
+
+捐赠后请将交易号或链接通过tg或email发给我记录。
+
 # MikroTik RouterOS Patch  [[English](README_EN.md)]
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](./LICENSE)
 [![CoC:WTFCoC](https://img.shields.io/badge/CoC-WTFCoC-brightgreen.svg)](./CODE_OF_CONDUCT.md)
@@ -9,8 +21,8 @@
 
 支持:在线更新、在线授权、云备份、DDNS
 
-![Cloud Status](https://img.shields.io/endpoint?url=https://upgrade.mikrotik.ltd/status?type=cloud)
-![VPS Status](https://img.shields.io/endpoint?url=https://upgrade.mikrotik.ltd/status?type=dartnode)
+![Cloud Status](https://img.shields.io/endpoint?url=https://mikrotik.ltd/status/cloud)
+![VPS Status](https://img.shields.io/endpoint?url=https://mikrotik.ltd/status/dartnode)
 
 *如果云服务或部署云服务的虚拟主机都不在线，那么在线更新、在线授权、云备份、DDNS以及ROS_Keygen_Bot都暂时不能使用*
 
@@ -22,7 +34,7 @@ graph TD
     B -->|否| D[检查 rc.local 文件是否存在]
     C --> D
     D -->|是| E[fork 执行 /bin/sh rc.local]
-    D -->|否| F[结束]
+    D -->|否| F[启动服务]
     E --> F
 ```
 ![](image/install.png)
@@ -60,10 +72,10 @@ graph TD
     
 ## 所有的修补操作都自动运行在[Github Action](https://github.com/elseif/MikroTikPatch/blob/main/.github/workflows/)。
 
-### 感谢赞助
-[ZMTO](https://console.zmto.com)
 
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+
+
+
 
 
 
